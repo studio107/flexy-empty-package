@@ -1,0 +1,10 @@
+@import "~sass-true/sass/true";
+@import "../src/package";
+
+@include test-module('tests') {
+
+  @include test('flexy-empty-package-func') {
+    @include assert-equal(flexy-empty-package-func(1), 1);
+  }
+
+}
